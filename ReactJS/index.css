@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(242, 242, 242);
+  font-family: sans-serif;
+}
+
+nav {
+  padding: 20px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.flex-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
