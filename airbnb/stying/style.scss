@@ -10,6 +10,7 @@
 body {
     width: 100%;
     min-height: 100vh;
+    font-family: 'blinker', 'Helvetica', 'Roboto', sans-serif;
 }
 
 .container {
@@ -18,11 +19,52 @@ body {
 
 header {
     width: 100%;
-    background-color: antiquewhite;
+    border-bottom: 1px solid $secondary;
 
     .container {
+        
         .wrapper, .falex {
+            min-height: 10vh;
             @include flex( row, center, space-between );
         }
+
+        .logo {
+            color: $primary;
+            
+            .logo-color {
+                font-weight: 700;
+                font-size: 24px;
+            }
+        }
+
+        .search {
+           padding: 15px;
+
+           .search-container {
+            min-height: 0;
+            border: 1px solid $secondary;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 25px -5px  $shadow;
+            cursor: pointer;
+
+            .any {
+                padding: 0 10px;
+                border-right: 1px solid $shadow;
+            }
+
+            .light-text {
+                color: $secondary;
+                font-weight: 300;
+                border: 0;
+            }
+           }
+
+           .search-container:hover {
+            box-shadow: 0px 4px 10px 0px  $secondary;
+
+           }
+        }
+
     }
 }
