@@ -7,4 +7,20 @@
 body {
   width: 100%;
   min-height: 100vh;
+}
+
+.container {
+  margin: 0 5%;
+}
+
+header {
+  width: 100%;
+  background-color: antiquewhite;
+}
+header .container .wrapper, header .container .falex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
 }/*# sourceMappingURL=style.css.map */

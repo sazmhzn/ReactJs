@@ -12,6 +12,17 @@ body {
     min-height: 100vh;
 }
 
-header {
+.container {
+    @include container();
+}
 
+header {
+    width: 100%;
+    background-color: antiquewhite;
+
+    .container {
+        .wrapper, .falex {
+            @include flex( row, center, space-between );
+        }
+    }
 }
