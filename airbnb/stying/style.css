@@ -40,18 +40,31 @@ header .container .search .search-container {
   min-height: 0;
   border: 1px solid #B0B0B0;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 30px;
   box-shadow: 0px 4px 25px -5px #DDDDDD;
   cursor: pointer;
 }
 header .container .search .search-container .any {
   padding: 0 10px;
+  font-weight: 450;
   border-right: 1px solid #DDDDDD;
 }
 header .container .search .search-container .light-text {
   color: #B0B0B0;
   font-weight: 300;
   border: 0;
+}
+header .container .search .search-container .serach-logo {
+  background-color: #FF385C;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
 }
 header .container .search .search-container:hover {
   box-shadow: 0px 4px 10px 0px #B0B0B0;
