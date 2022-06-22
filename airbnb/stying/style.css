@@ -68,4 +68,11 @@ header .container .search .search-container .serach-logo {
 }
 header .container .search .search-container:hover {
   box-shadow: 0px 4px 10px 0px #B0B0B0;
+}
+header .container .hoverable {
+  padding: 10px;
+}
+header .container .hoverable:hover {
+  border-radius: 20px;
+  background-color: #B0B0B0;
 }/*# sourceMappingURL=style.css.map */

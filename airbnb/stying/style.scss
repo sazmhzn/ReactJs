@@ -77,5 +77,14 @@ header {
            }
         }
 
+        .hoverable {
+            padding: 10px;
+        }
+
+        .hoverable:hover {
+            border-radius: 20px;
+            background-color: $secondary;
+        }
+        
     }
 }
