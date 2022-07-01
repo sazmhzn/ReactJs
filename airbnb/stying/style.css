@@ -26,17 +26,30 @@ header .container .wrapper, header .container .falex {
   justify-content: space-between;
   gap: 10px;
 }
+header .container .wrapper > * {
+  flex: 1;
+}
 header .container .logo {
   color: #FF385C;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
 }
 header .container .logo .logo-color {
   font-weight: 700;
   font-size: 24px;
 }
-header .container .search {
+header .container .search, header .container .samll-search {
   padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
-header .container .search .search-container {
+header .container .search .search-container, header .container .samll-search .search-container {
   min-height: 0;
   border: 1px solid #B0B0B0;
   padding: 10px;
@@ -44,17 +57,17 @@ header .container .search .search-container {
   box-shadow: 0px 4px 25px -5px #DDDDDD;
   cursor: pointer;
 }
-header .container .search .search-container .any {
+header .container .search .search-container .any, header .container .samll-search .search-container .any {
   padding: 0 10px;
   font-weight: 450;
   border-right: 1px solid #DDDDDD;
 }
-header .container .search .search-container .light-text {
+header .container .search .search-container .light-text, header .container .samll-search .search-container .light-text {
   color: #B0B0B0;
   font-weight: 300;
   border: 0;
 }
-header .container .search .search-container .serach-logo {
+header .container .search .search-container .serach-logo, header .container .samll-search .search-container .serach-logo {
   background-color: #FF385C;
   display: flex;
   flex-direction: row;
@@ -66,13 +79,23 @@ header .container .search .search-container .serach-logo {
   height: 30px;
   border-radius: 50px;
 }
-header .container .search .search-container:hover {
+header .container .search .search-container:hover, header .container .samll-search .search-container:hover {
   box-shadow: 0px 4px 10px 0px #B0B0B0;
+}
+header .container .end-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+header .container .samll-search {
+  width: 20%;
 }
 header .container .hoverable {
   padding: 10px;
 }
 header .container .hoverable:hover {
   border-radius: 20px;
-  background-color: #B0B0B0;
+  background-color: #efefef;
 }/*# sourceMappingURL=style.css.map */

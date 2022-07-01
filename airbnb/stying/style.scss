@@ -28,8 +28,13 @@ header {
             @include flex( row, center, space-between );
         }
 
+        .wrapper > * {
+            flex: 1;
+        }
+
         .logo {
             color: $primary;
+            @include flex(row, center, flex-start);
             
             .logo-color {
                 font-weight: 700;
@@ -37,8 +42,10 @@ header {
             }
         }
 
-        .search {
+        .search , .samll-search {
            padding: 15px;
+            @include flex(row, center, center);
+
 
            .search-container {
             min-height: 0;
@@ -69,6 +76,8 @@ header {
                 height: 30px;
                 border-radius: 50px;
             }
+
+         
            }
 
            .search-container:hover {
@@ -77,13 +86,21 @@ header {
            }
         }
 
+        .end-flex {
+            @include flex( row, center, flex-end );
+        }
+        
+        .samll-search {
+            width: 20%;
+        }
+
         .hoverable {
             padding: 10px;
         }
 
         .hoverable:hover {
             border-radius: 20px;
-            background-color: $secondary;
+            background-color: $light-shadow;
         }
         
     }
