@@ -105,3 +105,26 @@ header {
         
     }
 }
+
+// filter container css
+.filter-section {
+    width: 100%;
+    min-height: 10vh;
+    @include flex(row, center, space-between);
+
+    .icon-filter {
+        width: 100%;
+        @include flex(row, center, flex-end);
+
+        .owl-carousel {
+            width: 100%;
+        }
+    }
+
+    .button-filter {
+        width: 8%;
+    }
+    
+
+
+}

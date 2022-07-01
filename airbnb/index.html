@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./stying/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script
       src="https://kit.fontawesome.com/a623ab60f5.js"
       crossorigin="anonymous"
@@ -127,10 +141,78 @@
       </div>
     </header>
 
+    <!-- Filter component -->
+    <div class="filter-section">
+      <div class="container">
+        <div class="icon-filter">
+        <div class="owl-carousel owl-theme">
+          <div class="item"><h4>1</h4></div>
+          <div class="item"><h4>2</h4></div>
+          <div class="item"><h4>3</h4></div>
+          <div class="item"><h4>4</h4></div>
+          <div class="item"><h4>5</h4></div>
+          <div class="item"><h4>6</h4></div>
+          <div class="item"><h4>7</h4></div>
+          <div class="item"><h4>8</h4></div>
+          <div class="item"><h4>9</h4></div>
+          <div class="item"><h4>10</h4></div>
+          <div class="item"><h4>11</h4></div>
+          <div class="item"><h4>12</h4></div>
+        </div>
+      </div>
+      <button class="button-filter falex">
+        <svg
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+          style="display: block; height: 14px; width: 14px; fill: currentColor"
+          aria-hidden="true"
+          role="presentation"
+          focusable="false"
+        >
+          <path
+            d="M5 8c1.306 0 2.418.835 2.83 2H14v2H7.829A3.001 3.001 0 1 1 5 8zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm6-8a3 3 0 1 1-2.829 4H2V4h6.17A3.001 3.001 0 0 1 11 2zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+          ></path>
+        </svg>
+        <span>Filter</span>
+      </button>
+      </div>
+      
+    </div>
+
     <!-- Hero component -->
     <div class="hero"></div>
 
     <!-- card component -->
     <div class="card-container"></div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 13,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
