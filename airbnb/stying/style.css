@@ -111,7 +111,6 @@ header .container .hoverable:hover {
 .filter-section {
   width: 100%;
   min-height: 10vh;
-  background-color: aqua;
 }
 .filter-section .icon-filter {
   width: 90%;
@@ -120,15 +119,19 @@ header .container .hoverable:hover {
   align-items: center;
   justify-content: flex-end;
   gap: 10px;
-  background-color: rgb(43, 96, 143);
 }
 .filter-section .icon-filter .owl-carousel {
   width: 100%;
+}
+.filter-section .icon-filter .owl-carousel .item p {
+  font-size: 12px;
 }
 .filter-section .button-filter {
   width: 10%;
 }
 .filter-section .button-filter button {
-  width: 100%;
-  padding: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid #B0B0B0;
 }/*# sourceMappingURL=style.css.map */

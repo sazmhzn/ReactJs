@@ -114,15 +114,21 @@ header {
 .filter-section {
     width: 100%;
     min-height: 10vh;
-    background-color: aqua;
 
     .icon-filter {
         width: 90%;
         @include flex(row, center, flex-end);
-        background-color: rgb(43, 96, 143);
+    
 
         .owl-carousel {
             width: 100%;
+
+            .item {
+
+                p{
+                    font-size: 12px;
+                }
+            }
         }
     }
 
@@ -130,8 +136,7 @@ header {
         width: 10%;
 
         button {
-            width: 100%;
-            padding: 10px;
+            @include button();
         }
     }
     
