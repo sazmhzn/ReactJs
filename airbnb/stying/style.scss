@@ -17,6 +17,10 @@ body {
     @include container();
 }
 
+.falex {
+    @include flex(row, center, space-between);
+}
+
 header {
     width: 100%;
     border-bottom: 1px solid $secondary;
@@ -110,11 +114,12 @@ header {
 .filter-section {
     width: 100%;
     min-height: 10vh;
-    @include flex(row, center, space-between);
+    background-color: aqua;
 
     .icon-filter {
-        width: 100%;
+        width: 90%;
         @include flex(row, center, flex-end);
+        background-color: rgb(43, 96, 143);
 
         .owl-carousel {
             width: 100%;
@@ -122,7 +127,12 @@ header {
     }
 
     .button-filter {
-        width: 8%;
+        width: 10%;
+
+        button {
+            width: 100%;
+            padding: 10px;
+        }
     }
     
 

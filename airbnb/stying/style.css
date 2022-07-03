@@ -14,6 +14,14 @@ body {
   margin: 0 5%;
 }
 
+.falex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
 header {
   width: 100%;
   border-bottom: 1px solid #B0B0B0;
@@ -103,23 +111,24 @@ header .container .hoverable:hover {
 .filter-section {
   width: 100%;
   min-height: 10vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
+  background-color: aqua;
 }
 .filter-section .icon-filter {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   gap: 10px;
+  background-color: rgb(43, 96, 143);
 }
 .filter-section .icon-filter .owl-carousel {
   width: 100%;
 }
 .filter-section .button-filter {
-  width: 8%;
+  width: 10%;
+}
+.filter-section .button-filter button {
+  width: 100%;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
