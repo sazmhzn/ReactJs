@@ -124,6 +124,12 @@ header {
             width: 100%;
 
             .item {
+                width: 100%;
+                @include flex(column, center, center);
+
+                img {
+                    width: 32px;                    
+                }
 
                 p{
                     font-size: 12px;
