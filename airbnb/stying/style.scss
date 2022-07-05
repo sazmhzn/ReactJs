@@ -114,26 +114,33 @@ header {
 .filter-section {
     width: 100%;
     min-height: 10vh;
+    padding: 30px 0;
 
     .icon-filter {
         width: 90%;
-        @include flex(row, center, flex-end);
-    
+        @include flex(row, center, space-between);
 
         .owl-carousel {
             width: 100%;
 
             .item {
                 width: 100%;
-                @include flex(column, center, center);
 
-                img {
-                    width: 32px;                    
+                span  {
+                    @include flex(column, center, flex-start);
+                    
+                    img {
+                        width: 24px;                    
+                    }
+    
+                    p{
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: $secondary;
+                    }
                 }
 
-                p{
-                    font-size: 12px;
-                }
+               
             }
         }
     }
