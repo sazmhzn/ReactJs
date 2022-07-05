@@ -107,82 +107,88 @@ header {
 
 // filter container css
 .filter-section {
-    background-color: antiquewhite;
   width: 100%;
   min-height: 10vh;
   padding: 10px 0;
 
-  .icon-filter {
-    width: 90%;
-    @include flex(row, flex-start, flex-start);
+  .container {
+    margin: 0 3%;
 
-    .owl-carousel {
-      .item {
-        position: relative;
+    .falex {
+        @include flex( row, center, flex-start );
+      .icon-filter {
+        width: 90%;
+        @include flex(row, flex-start, flex-start);
 
-        span {
-          position: relative;
-          padding: 20px 0;
-          @include flex(column, center, flex-start);
-          filter: contrast(calc(13 / 44));
+        .owl-carousel {
+          .item {
+            position: relative;
 
-          img {
-            width: 24px;
+            span {
+              position: relative;
+              padding: 20px 0;
+              @include flex(column, center, flex-start);
+              filter: contrast(calc(13 / 44));
+
+              img {
+                width: 24px;
+              }
+
+              p {
+                font-weight: 500;
+                font-size: 14px;
+              }
+
+              &:hover {
+                filter: contrast(1);
+              }
+
+              &::after {
+                content: "";
+                height: 0px;
+                width: 100%;
+                background-color: $secondary;
+                border-radius: 50px;
+
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+
+              &:hover::after {
+                height: 2px;
+              }
+            }
           }
 
-          p {
-            font-weight: 500;
-            font-size: 14px;
-          }
-
-          &:hover {
+          #active-filter {
+            position: relative;
             filter: contrast(1);
-          }
 
-          &::after {
-            content: "";
-            height: 0px;
-            width: 100%;
-            background-color: $secondary;
-            border-radius: 50px;
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: 100%;
+              left: 0;
 
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translate(-50%, -50%);
-          }
-
-          &:hover::after {
-            height: 2px;
+              background-color: rgb(0, 0, 0);
+              width: 100%;
+              height: 2px;
+              z-index: 1002;
+            }
           }
         }
       }
 
-      #active-filter {
-        position: relative;
-        filter: contrast(1);
+      .button-filter {
+        width: 10%;
 
-        &::after {
-          content: "";
-          position: absolute;
-          bottom: 100%;
-          left: 0;
-
-          background-color: rgb(0, 0, 0);
-          width: 100%;
-          height: 2px;
-          z-index: 1002;
+        button {
+          @include button();
+          font-weight: 700;
         }
       }
-    }
-  }
-
-  .button-filter {
-    width: 10%;
-
-    button {
-      @include button();
-      font-weight: 700;
     }
   }
 }
@@ -198,55 +204,54 @@ header {
 
     .cards {
       @include flex(row, center, space-between);
+      flex-wrap: wrap;
 
       .card {
-        width: 20%;
+        width: 24%;
         @include flex(column, flex-start, center);
         gap: 10px;
+        margin-bottom: 15px;
 
         .card-image {
+          .images {
+            width: 100%;
+            height: 300px;
+            position: relative;
 
-            .images {
-                width: 100%;
-                height: 300px;
-                position: relative;
-
-                svg {
-                    position: absolute;
-                    right: 5%;
-                    top: 5%;
-                 
-                }
-
-                img {
-                    border-radius: 20px;
-                    width: 100%;
-                    min-height: 100%;
-                    object-fit: cover;
-                }
+            svg {
+              position: absolute;
+              right: 5%;
+              top: 5%;
             }
+
+            img {
+              border-radius: 20px;
+              width: 100%;
+              min-height: 100%;
+              object-fit: cover;
+            }
+          }
         }
 
         .card-details {
-            width: 100%;
+          width: 100%;
 
-            .card-title {
-                font-weight: 500;
-                margin-bottom: 5px;
+          .card-title {
+            font-weight: 500;
+            margin-bottom: 5px;
+          }
+
+          .distance {
+            color: $secondary;
+            font-weight: 400;
+            margin-bottom: 10px;
+          }
+
+          .price {
+            span {
+              font-weight: 500;
             }
-
-            .distance {
-                color: $secondary;
-                font-weight: 400;
-                margin-bottom: 10px;
-            }
-
-            .price {
-
-                span {
-                    font-weight: 500;
-                }
-            }
+          }
         }
       }
     }
