@@ -121,7 +121,7 @@ header {
         @include flex(row, flex-start, flex-start);
 
         .owl-carousel {
-            overflow-y: auto;
+
             .item {
                 position: relative;
 
@@ -192,5 +192,12 @@ header {
     }
     
 
+
+}
+
+// for the cards
+
+.card-container {
+    width: 100%;
 
 }

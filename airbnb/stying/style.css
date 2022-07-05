@@ -121,9 +121,6 @@ header .container .hoverable:hover {
   justify-content: flex-start;
   gap: 10px;
 }
-.filter-section .icon-filter .owl-carousel {
-  overflow-y: auto;
-}
 .filter-section .icon-filter .owl-carousel .item {
   position: relative;
 }
@@ -183,4 +180,8 @@ header .container .hoverable:hover {
   border-radius: 10px;
   background-color: transparent;
   border: 1px solid #B0B0B0;
+}
+
+.card-container {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
