@@ -116,6 +116,7 @@ header .container .hoverable:hover {
 }
 
 .filter-section {
+  background-color: antiquewhite;
   width: 100%;
   min-height: 10vh;
   padding: 10px 0;
@@ -187,6 +188,7 @@ header .container .hoverable:hover {
   border-radius: 10px;
   background-color: transparent;
   border: 1px solid #B0B0B0;
+  font-weight: 700;
 }
 
 .card-section {
@@ -210,14 +212,17 @@ header .container .hoverable:hover {
   align-items: flex-start;
   justify-content: center;
   gap: 10px;
-}
-.card-section .container .cards .card .card-image {
-  width: 100%;
+  gap: 10px;
 }
 .card-section .container .cards .card .card-image .images {
   width: 100%;
   height: 300px;
-  background-color: antiquewhite;
+  position: relative;
+}
+.card-section .container .cards .card .card-image .images svg {
+  position: absolute;
+  right: 5%;
+  top: 5%;
 }
 .card-section .container .cards .card .card-image .images img {
   border-radius: 20px;
@@ -226,6 +231,18 @@ header .container .hoverable:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.card-section .container .cards .card > * {
+.card-section .container .cards .card .card-details {
+  width: 100%;
+}
+.card-section .container .cards .card .card-details .card-title {
+  font-weight: 500;
   margin-bottom: 5px;
+}
+.card-section .container .cards .card .card-details .distance {
+  color: #B0B0B0;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.card-section .container .cards .card .card-details .price span {
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
