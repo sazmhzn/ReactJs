@@ -20,9 +20,15 @@ body {
   @include flex(row, center, space-between);
 }
 
+.profile {
+    width: $icon-size;
+    height: $icon-size;
+   
+}
+
 header {
   width: 100%;
-  border-bottom: 1px solid $secondary;
+  border-bottom: 1px solid $light-secondary;
 
   .container {
     .wrapper,
@@ -51,9 +57,9 @@ header {
       @include flex(row, center, center);
 
       .search-container {
-        width: 90%;
+        width: 85%;
         min-height: 0;
-        border: 1px solid $secondary;
+        border: 1px solid $light-secondary;
         padding: 10px;
         border-radius: 30px;
         box-shadow: 0px 4px 25px -5px $shadow;
@@ -61,7 +67,7 @@ header {
 
         .any {
           padding: 0 10px;
-          font-weight: 450;
+          font-weight: 600;
           border-right: 1px solid $shadow;
         }
 
@@ -93,18 +99,21 @@ header {
       .small-search {
 
         .search-container {
-            padding: 10px;
-            border-radius: 20px;
-            border: 1px solid $secondary;
+            padding: 5px 10px;
+            
             min-height: 0;
 
         }
       }
     }
 
-    .samll-search {
-      width: 20%;
+    .small-search {
+      border: 1px solid $secondary;
+      border-radius: 50px;
     }
+    .small-search:hover {
+        box-shadow: 0px 4px 10px 0px $secondary;
+      }
 
     .hoverable {
       padding: 10px;
@@ -115,4 +124,55 @@ header {
       background-color: $light-shadow;
     }
   }
+}
+
+main {
+    .title {
+        margin: 20px 0;
+
+        h1 {
+            font-weight: 500;
+            font-size: 1.9em;
+        }
+    }
+
+    .image-collection {
+        border-radius: 20px;
+        position: relative;
+        background-color: antiquewhite;
+        min-height: 50vh;
+        width: 100%;
+        @include flex(row, center,space-between);
+
+        .big-image, .small-image  {
+            flex: 1;
+            width: 100%;
+       
+
+            img {
+                object-fit: cover;
+            }
+        }
+
+        .small-image {
+            width: 100%;
+            @include flex(column, center,center);
+            gap: 20px;
+
+            .row {
+                flex: 1;
+                background-color: aqua;
+                @include flex(row, center,center);
+                width: 100%;
+
+                img {
+                    width: 90%;
+                    object-fit: cover;
+                }
+            }
+
+        }
+
+
+    }
 }

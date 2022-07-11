@@ -22,9 +22,14 @@ body {
   gap: 10px;
 }
 
+.profile {
+  width: 32px;
+  height: 32px;
+}
+
 header {
   width: 100%;
-  border-bottom: 1px solid #B0B0B0;
+  border-bottom: 1px solid #d7d7d7;
 }
 header .container .wrapper,
 header .container .falex {
@@ -59,9 +64,9 @@ header .container .search {
   gap: 10px;
 }
 header .container .search .search-container {
-  width: 90%;
+  width: 85%;
   min-height: 0;
-  border: 1px solid #B0B0B0;
+  border: 1px solid #d7d7d7;
   padding: 10px;
   border-radius: 30px;
   box-shadow: 0px 4px 25px -5px #DDDDDD;
@@ -69,7 +74,7 @@ header .container .search .search-container {
 }
 header .container .search .search-container .any {
   padding: 0 10px;
-  font-weight: 450;
+  font-weight: 600;
   border-right: 1px solid #DDDDDD;
 }
 header .container .search .search-container .light-text {
@@ -100,13 +105,15 @@ header .container .end-flex {
   gap: 10px;
 }
 header .container .end-flex .small-search .search-container {
-  padding: 10px;
-  border-radius: 20px;
-  border: 1px solid #B0B0B0;
+  padding: 5px 10px;
   min-height: 0;
 }
-header .container .samll-search {
-  width: 20%;
+header .container .small-search {
+  border: 1px solid #B0B0B0;
+  border-radius: 50px;
+}
+header .container .small-search:hover {
+  box-shadow: 0px 4px 10px 0px #B0B0B0;
 }
 header .container .hoverable {
   padding: 10px;
@@ -114,4 +121,56 @@ header .container .hoverable {
 header .container .hoverable:hover {
   border-radius: 20px;
   background-color: #efefef;
+}
+
+main .title {
+  margin: 20px 0;
+}
+main .title h1 {
+  font-weight: 500;
+  font-size: 1.9em;
+}
+main .image-collection {
+  border-radius: 20px;
+  position: relative;
+  background-color: antiquewhite;
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+main .image-collection .big-image, main .image-collection .small-image {
+  flex: 1;
+  width: 100%;
+}
+main .image-collection .big-image img, main .image-collection .small-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .image-collection .small-image {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  gap: 20px;
+}
+main .image-collection .small-image .row {
+  flex: 1;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+main .image-collection .small-image .row img {
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=room.css.map */
