@@ -12,8 +12,7 @@
 .owl-carousel .owl-stage {
   position: relative;
   touch-action: manipulation;
-  -moz-backface-visibility: hidden;
-  /* fix firefox animation glitch */
+  -moz-backface-visibility: hidden; /* fix firefox animation glitch */
 }
 .owl-carousel .owl-stage:after {
   content: ".";
@@ -215,4 +214,4 @@
   z-index: 1;
   height: 100%;
   width: 100%;
-}/*# sourceMappingURL=owl.carousel.css.map */
+}
